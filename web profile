@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Profile</title>
+</head>
+<body>
+	<header>
+		<h1>Web Profile</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Hello, my name is John Doe. I am a web developer with 5 years of experience in the field.</p>
+	</section>
+
+	<section id="experience">
+		<h2>Experience</h2>
+		<ul>
+			<li>
+				<h3>Web Developer</h3>
+				<p>ABC Company</p>
+				<p>2018 - Present</p>
+			</li>
+			<li>
+				<h3>Junior Web Developer</h3>
+				<p>XYZ Company</p>
+				<p>2016 - 2018</p>
+			</li>
+		</ul>
+	</section>
+
+	<section id="education">
+		<h2>Education</h2>
+		<ul>
+			<li>
+				<h3>Bachelor of Science in Computer Science</h3>
+				<p>University of ABC</p>
+				<p>2012 - 2016</p>
+			</li>
+			<li>
+				<h3>Diploma in Web Development</h3>
+				<p>XYZ Academy</p>
+				<p>2016 - 2017</p>
+			</li>
+		</ul>
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PHP</li>
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<p>Email: john.doe@gmail.com</p>
+		<p>Phone: +1 (123) 456-7890</p>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Web Profile</p>
+	</footer>
+</body>
+</html>
