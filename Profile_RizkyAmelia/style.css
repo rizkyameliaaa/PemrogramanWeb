@@ -1,0 +1,91 @@
+.header{
+	background-color: #153462;
+	color: whitesmoke;
+	height: 70px;
+	display: flex;
+}
+.header1{
+	margin: auto 0;
+	float: left;
+	font-size: 30px;
+	padding-left: 60px;
+}
+.header2{
+	margin: auto;
+	margin-right: 60px;
+}
+.header2 ul {
+	margin: auto;
+}
+.header2 li{
+	float: right;
+	padding-top: -5px;
+	padding: 0 20px;
+}
+body{
+	font-family: "Helvetica";
+}
+.profil img {
+	display: block;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.about {
+	margin-top: 30px;
+}
+.about p {
+	width: 75vw;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+table {
+	width: 60vw;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	/* margin-bottom: 50px; */
+}
+
+/* .experinces {
+	padding-left: 10px;
+	margin-right: auto;
+	display: flex;
+} */
+
+.contact{
+	margin: auto 0;
+	float: left;
+	font-size: 30px;
+	padding-left: 60px;
+	padding-top: 30px;
+}
+.contact ul {
+	margin: auto;
+}
+.contact-list {
+	float: right;
+	padding-top: -5px;
+	padding: 0 20px;
+	margin-right: 60px;
+	margin-top: 5px;
+}
+.contact-list li {
+	font-size: 12px;
+    margin-top: 10px;
+}
+.experiences h3{
+    color:#153462 ;
+}
+.footer{
+	margin-top: 50px;
+	background-color: #153462;
+	color: whitesmoke;
+	height: 100px;	
+}
+.footer a{
+    color: aliceblue;
+    font-size: 12px;
+}
