@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Data PHP</title>
+    <title>Latihan</title>
     <!-- load css boostrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/dashboard.css" rel="stylesheet">
@@ -38,17 +38,17 @@
             if (@$_GET['status']!==NULL) {
               $status = $_GET['status'];
               if ($status=='ok') {
-                echo '<br><br><div class="alert alert-success" role="alert">Data Employees berhasil di-update</div>';
+                echo '<br><br><div class="alert alert-success" role="alert">Data Mahasiswa berhasil di-update</div>';
               }
               elseif($status=='err'){
-                echo '<br><br><div class="alert alert-danger" role="alert">Data Employees gagal di-update</div>';
+                echo '<br><br><div class="alert alert-danger" role="alert">Data Mahasiswa gagal di-update</div>';
               }
 
             }
            ?>
-          <h2 style="margin: 30px 0 30px 0;">employees</h2>
+          <h2 style="margin: 30px 0 30px 0;">Employee</h2>
           <div class="table-responsive">
-            <table class="table table-striped table-sm" border="1">
+            <table border="1" class="table table-striped table-sm">
               <thead>
                 <tr>
                   <th>employeeNumber</th>
@@ -56,6 +56,10 @@
                   <th>lastName</th>
                   <th>extension</th>
                   <th>email</th>
+                  <th>officeCode</th>
+                  <th>reportsTo</th>
+                  <th>jobTitle</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -73,29 +77,27 @@
                     <td><?php echo $data['lastName'];  ?></td>
                     <td><?php echo $data['extension'];  ?></td>
                     <td><?php echo $data['email'];  ?></td>
+                    <td><?php echo $data['officeCode'];  ?></td>
+                    <td><?php echo $data['reportsTo'];  ?></td>
+                    <td><?php echo $data['jobTitle'];  ?></td>
                     <td>
-                      <a href="<?php echo "update.php?nrp=".$data['nrp']; ?>" class="btn btn-outline-warning btn-sm"> Update</a>
+                      <a href="<?php echo "update.php?nrp=".$data['employeeNumber']; ?>" class="btn btn-outline-warning btn-sm">Update</a>
                       &nbsp;&nbsp;
-                      <a href="<?php echo "delete.php?nrp=".$data['nrp']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
+                      <a href="<?php echo "delete.php?nrp=".$data['employeeNumber']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
                     </td>
                   </tr>
                  <?php endwhile ?>
               </tbody>
-            </table>
-          </div>
-        </main>
-      </div>
-    </div>
-
-    <h2 style="margin: 30px 0 30px 0;">productlines</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm" border = "1">
+              </table>
+              <h2>Product Lines</h2>
+              <table border="1" class="table table-striped table-sm">
               <thead>
                 <tr>
                   <th>productLine</th>
                   <th>textDescription</th>
                   <th>htmlDescription</th>
-                  <th>image</th>
+                  <th>image</th>  
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -113,9 +115,9 @@
                     <td><?php echo $data['htmlDescription'];  ?></td>
                     <td><?php echo $data['image'];  ?></td>
                     <td>
-                      <a href="<?php echo "update.php?nrp=".$data['nrp']; ?>" class="btn btn-outline-warning btn-sm"> Update</a>
+                      <a href="<?php echo "update.php?nrp=".$data['productLine']; ?>" class="btn btn-outline-warning btn-sm">Update</a>
                       &nbsp;&nbsp;
-                      <a href="<?php echo "delete.php?nrp=".$data['nrp']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
+                      <a href="<?php echo "delete.php?nrp=".$data['productLine']; ?>" class="btn btn-outline-danger btn-sm"> Delete</a>
                     </td>
                   </tr>
                  <?php endwhile ?>
