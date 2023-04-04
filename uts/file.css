@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main";
+    height: 100vh;
+  }
+  
+  .item1 {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .item2 {
+    grid-area: sidebar;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .item2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .item2 li.nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .item2 li.nav-item > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  .item2 li.nav-item > a:hover {
+    background-color: #ddd;
+  }
+  
+  .item2 li.nav-item.active > a {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .item2 li.nav-item.active > a:hover {
+    background-color: #0077c2;
+  }
+  
+  .item3 {
+    grid-area: main;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="date"],
+  select.custom-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button.btn:hover {
+    background-color: #0077c2;
+  }
+  
+  .custom-select option[selected] {
+    color: #aaa;
+  }
+  
+  .custom-select option {
+    color: #000;
+  }
+  
