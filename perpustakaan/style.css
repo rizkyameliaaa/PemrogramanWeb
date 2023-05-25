@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+}
+
+.navbar ul li a.active {
+  font-weight: bold;
+}
+
+
+/* Alert styles */
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* Table styles */
+.table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Action button styles */
+.action {
+  display: flex;
+}
+
+.action .button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.action .button.update {
+  background-color: #28a745;
+}
+
+.action .button.delete {
+  background-color: #dc3545;
+}
+
+/* Cover image styles */
+.cover_img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styles */
+.form {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form .input_text {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button.tambah {
+  background-color: #28a745;
+}
+
+/* Container styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+  }
+  
+  .navbar h1 {
+    font-size: 20px;
+  }
+}
